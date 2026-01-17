@@ -44,6 +44,7 @@ public class User {
 
     private String password;
     private String profilePictureUrl;
+    
     @Builder.Default
     private Boolean active = true;
 
@@ -55,7 +56,8 @@ public class User {
     // @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     // private List<Account> accounts;
 
-    private java.time.LocalDateTime createdAt;
+    @Builder.Default
+    private java.time.LocalDateTime createdAt = java.time.LocalDateTime.now();
     private java.time.LocalDateTime updatedAt;
 
 }
