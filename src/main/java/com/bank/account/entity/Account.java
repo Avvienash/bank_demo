@@ -1,11 +1,11 @@
 package com.bank.account.entity;
 
 import java.math.BigDecimal;
-import java.util.Currency;
 
 import com.bank.auth_user.entity.User;
 import com.bank.enums.AccountStatus;
 import com.bank.enums.AccountType;
+import com.bank.enums.Currency;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
